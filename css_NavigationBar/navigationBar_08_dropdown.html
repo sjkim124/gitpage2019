@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport"
+		           content="width=device-width, initial-scale=1.0">
+		<title>navigation bar_08_dropdown</title>
+		<style>
+			body{margin:0; padding:0;}
+			ul{list-style-type: none; overflow:hidden;background-color:#333;
+				margin:0; padding:0;}
+			li{float:left;}
+			li a, .dropbtn{display:inline-block;color:white;text-align:center;
+			 text-decoration:none; padding:14px 16px;}
+			li a:hover, .dropdown:hover .dropbtn{background-color:red;}
+			li.dropdown{display:inline-block;}
+			.dropdown-content{display:none; position:absolute;
+			  background-color:#f9f9f9; min-width:160px;
+			  box-shadow:0px 8px 16px 0px rgba(0,0,0,0.2);
+			  z-index:1;}
+			.dropdown-content a{color:black; padding:12px 16px;
+			 text-decoration:none; display:block; text-align:left;}
+			 .dropdown-content a:hover{background-color:#f1f1f1;}
+			 .dropdown:hover .dropdown-content{display:block;}
+			 
+			div.content{clear:left; background-color:#eee; 
+		   padding: 5px 16px;}
+			 
+			
+		</style>
+	</head>
+	<header>
+		<h1>웹페이지 저작 관련 전문용어 정리</h1>
+	</header>
+	<body>
+		<ul>
+			<li><a  class="active" href="#web">WWW(world wide web)</a></li>
+			<li><a href="#webserver">웹서버</a></li>
+			<li><a href="#webbrowser">웹브라우저</a></li>
+			<li class="dropdown">
+				<a href="javascript:void(0)" class="dropbtn">웹프로그래밍 언어</a>
+					<div class="dropdown-content">
+						<a href="#html">HTML</a>
+						<a href="#css">CSS</a>
+						<a href="#js">JavaScript</a>
+					</div>
+			</li>
+		</ul>
+		<div class="content">
+			<h3 id="web">웹 이란?</h3>
+			<p>월드 와이드 웹(World Wide Web, WWW, W3)은 인터넷에 연결된 컴퓨터들을 통해 
+			사람들이 정보를 공유할 수 있는 전 세계적인 정보 공간을 말한다. 
+			간단히 웹(Web)이라 부르는 경우가 많다. </p>
+			<h3 id="webserver">웹 서버</h3>
+			<p>웹 서버(Web Server)는 HTTP를 통해 웹 브라우저에서 요청하는 HTML 문서나 
+			오브젝트(이미지 파일 등)을 전송해주는 서비스 프로그램</p>
+			<h3 id="webbrowser">웹 브라우저</h3>
+			<p>웹 서버에서 쌍방향 통신하는 HTML 문서나 파일과 연동하고 출력하는 응용 소프트웨어</p>
+			<h3 id="http">HTTP프로토콜</h3>
+			<p>HTTP(HyperText Transfer Protocol, 
+			       WWW 상에서 정보를 주고받을 수 있는 프로토콜이다. 
+				   주로 HTML 문서를 주고받는 데에 쓰인다. 
+			       TCP와 UDP를 사용하며, 80번 포트를 사용한다.</p>	   
+			
+			<h3 id="html">HTML</h3>
+			<p>HyperText Markup Language</p>
+			<h3 id="css">CSS</h3>
+			<p>Cascading Style Sheets</p>
+			<h3 id="js">JavaScript</h3>
+			<p>JavaScript 프로그래밍 언어</p>
+		</div>
+		
+	
+	</body>
+</html>

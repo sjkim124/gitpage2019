@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport"
+		           content="width=device-width, initial-scale=1.0">
+		<title>navigation bar_01</title>
+		<style>
+		  body{ margin: 0; }
+		  header{ background-color:#f1f1f1; text-align:center; 
+		  padding: 10px 0;}
+		
+		
+		   ul.sidenav{ list-style-type: none; margin:0; padding:0; 
+				width: 25%; background-color:#f1f1f1;
+				border: 1px solid #555;
+				position: fixed; height: 100%; overflow: auto;}
+		   ul.sidenav li a{ display: block;  color:#000; 
+				text-decoration: none;
+				padding: 8px 16px;
+		    }
+		
+		
+			ul.sidenav li a.active{ background-color:#4caf50; color:white;}
+			ul.sidenav li a:hover:not(.active) { background-color:#555; color: white; }
+			div.content{ margin-left:25%; padding: 1px 16px; height:1000px;}
+		@media screen and (max-width: 900px){
+			ul.sidenav{width:100%; height:auto; position:relative;}
+			ul.sidenav li a{ float:left; }
+			div.content{margin-left:0;}
+		}
+		@media screen and (max-width:400px){
+			ul.sidenav li a{float:none; text-align:center;
+		}
+			
+		</style>
+	</head>
+	<header>
+		<h1>웹페이지 저작 관련 전문용어 정리</h1>
+	</header>
+	<body>
+		<ul class="sidenav">
+			<li><a  class="active" href="#web">WWW(world wide web)</a></li>
+			<li><a href="#webserver">웹서버</a></li>
+			<li><a href="#webbrowser">웹브라우저</a></li>
+			<li><a href="#http">http프로토콜</a></li>
+		</ul>
+		<div class="content">
+			<h3 id="web">웹 이란?</h3>
+			<p>월드 와이드 웹(World Wide Web, WWW, W3)은 인터넷에 연결된 컴퓨터들을 통해 
+			사람들이 정보를 공유할 수 있는 전 세계적인 정보 공간을 말한다. 
+			간단히 웹(Web)이라 부르는 경우가 많다. </p>
+			<h3 id="webserver">웹 서버</h3>
+			<p>웹 서버(Web Server)는 HTTP를 통해 웹 브라우저에서 요청하는 HTML 문서나 
+			오브젝트(이미지 파일 등)을 전송해주는 서비스 프로그램</p>
+			<h3 id="webbrowser">웹 브라우저</h3>
+			<p>웹 서버에서 쌍방향 통신하는 HTML 문서나 파일과 연동하고 출력하는 응용 소프트웨어</p>
+			<h3 id="http">HTTP프로토콜</h3>
+			<p>HTTP(HyperText Transfer Protocol, 
+			       WWW 상에서 정보를 주고받을 수 있는 프로토콜이다. 
+				   주로 HTML 문서를 주고받는 데에 쓰인다. 
+			       TCP와 UDP를 사용하며, 80번 포트를 사용한다.</p>
+		</div>
+		
+	
+	</body>
+</html>
